@@ -1,16 +1,10 @@
 import { useState } from 'react';
 import { FiEdit3, FiTrash } from 'react-icons/fi';
 
+import { FoodObject } from '../../interfaces/interfaces';
+
 import { Container } from './styles';
 import api from '../../services/api';
-
-interface FoodObject {
-  id: number;
-  name: string;
-  image: string;
-  description: string;
-  price: number;
-}
 
 interface Props {
   available: boolean;

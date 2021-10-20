@@ -5,15 +5,9 @@ import { Modal } from '../Modal';
 import { Input } from '../Input';
 import { FormHandles } from '@unform/core';
 
-import { Form } from './styles';
+import { FoodObject } from '../../interfaces/interfaces';
 
-interface FoodObject {
-  id: number;
-  name: string;
-  image: string;
-  description: string;
-  price: number;
-}
+import { Form } from './styles';
 
 interface Props {
   isOpen: boolean;
